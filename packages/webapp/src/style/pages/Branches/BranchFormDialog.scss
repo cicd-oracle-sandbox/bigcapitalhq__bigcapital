@@ -1,0 +1,41 @@
+@import '@/style/_common';
+.dialog--branch-form {
+  width: 650px;
+
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group {
+      margin-bottom: 15px;
+    }
+    .#{$ns}-form-group.#{$ns}-inline {
+      .#{$ns}-label {
+        font-size: 13px;
+        margin-bottom: 3px;
+        min-width: 150px;
+      }
+      .#{$ns}-form-content {
+        width: 278px;
+      }
+      .#{$ns}-control-group > * {
+        flex-shrink: unset;
+        padding-right: 5px;
+        padding-left: 5px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      &.form-group--branch_address {
+        .#{$ns}-form-content {
+          width: 388px;
+        }
+      }
+    }
+  }
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

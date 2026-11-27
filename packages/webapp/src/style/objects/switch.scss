@@ -1,0 +1,9 @@
+@import '@/style/_common';
+.#{$ns}-control.#{$ns}-switch {
+  .#{$ns}-control-indicator {
+
+    &:before {
+      box-shadow: none;
+    }
+  }
+}

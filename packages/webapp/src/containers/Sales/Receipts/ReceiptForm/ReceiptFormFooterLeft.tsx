@@ -1,0 +1,66 @@
+import React from 'react';
+import intl from 'react-intl-universal';
+import styled from 'styled-components';
+import { FFormGroup, FEditableText } from '@/components';
+import { NS } from '@/constants/classes';
+
+export function ReceiptFormFooterLeft() {
+  return (
+    <React.Fragment>
+      {/* --------- Receipt message --------- */}
+      <ReceiptMsgFormGroup
+        name={'receiptMessage'}
+        label={intl.get('receipt_form.label.receipt_message')}
+        helperText={'Will be displayed on the Receipt'}
+      >
+        <FEditableText
+          name={'receiptMessage'}
+          placeholder={intl.get('receipt_form.receipt_message.placeholder')}
+          multiline
+          fastField
+        />
+      </ReceiptMsgFormGroup>
+
+      {/* --------- Terms and conditions --------- */}
+      <TermsConditsFormGroup
+        label={intl.get('receipt_form.label.terms_conditions')}
+        name={'termsConditions'}
+      >
+        <FEditableText
+          name={'termsConditions'}
+          placeholder={intl.get(
+            'receipt_form.terms_and_conditions.placeholder',
+          )}
+          multiline
+          fastField
+        />
+      </TermsConditsFormGroup>
+    </React.Fragment>
+  );
+}
+
+const ReceiptMsgFormGroup = styled(FFormGroup)`
+  &.${NS}-form-group {
+    margin-bottom: 40px;
+
+    .${NS}-label {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .${NS}-form-content {
+      margin-left: 10px;
+    }
+  }
+`;
+
+const TermsConditsFormGroup = styled(FFormGroup)`
+  &.${NS}-form-group {
+    .${NS}-label {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .${NS}-form-content {
+      margin-left: 10px;
+    }
+  }
+`;

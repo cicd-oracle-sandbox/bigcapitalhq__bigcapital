@@ -1,0 +1,76 @@
+@import '@/style/_common';
+// Allocate Landed Cost Form.
+.dialog--allocate-landed-cost-form {
+  width: 700px;
+
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group{
+      margin-bottom: 18px;
+    }
+    .#{$ns}-form-group.#{$ns}-inline {
+      .#{$ns}-label {
+        min-width: 165px;
+      }
+      .#{$ns}-form-content {
+        width: 300px;
+      }
+
+      &:not(.dialog--loading) .#{$ns}-dialog-body {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer{
+    // padding-top: 10px;
+  }
+
+  .bigcapital-datatable {
+    .table {
+      // max-height: 300px;
+      border: 1px solid #d1dee2;
+      min-width: auto;
+
+      .#{$ns}-dark & {
+        border-color: var(--color-dark-gray5);
+      }
+
+      .tbody,
+      .tbody-inner {
+        height: auto;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .tbody {
+        .tr .td {
+          padding: 0.4rem;
+          margin-left: -1px;
+          border-left: 1px solid #ececec;
+
+          .#{$ns}-dark & {
+            border-left-color: var(--color-dark-gray5);
+          }
+        }
+
+        .#{$ns}-form-group{
+          margin-bottom: 0;
+
+          &:not(.#{$ns}-intent-danger) .#{$ns}-input{
+            border: 1px solid #d0dfe2;
+
+            .#{$ns}-dark & {
+              border-color: var(--color-dark-gray5);
+            }
+
+            &:focus{
+              box-shadow: 0 0 0 1px #116cd0;
+              border-color: #116cd0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

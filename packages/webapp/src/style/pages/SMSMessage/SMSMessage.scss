@@ -1,0 +1,30 @@
+@import '@/style/_common';
+.dialog--sms-message {
+  width: 800px;
+
+  .#{$ns}-form-group {
+    margin-bottom: 15px;
+
+    label.#{$ns}-label {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .form-group {
+    &--message_text {
+      .#{$ns}-form-content {
+        textarea {
+          width: 100%;
+          min-width: 100%;
+          min-height: 90px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

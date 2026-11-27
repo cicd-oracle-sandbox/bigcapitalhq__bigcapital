@@ -1,0 +1,116 @@
+@import '@/style/_common';
+
+.filter-dropdown{
+  width: 600px;
+
+  &__form{
+    
+  }
+
+
+  &__conditions-wrap{
+    
+  }
+
+  &__conditions{
+    padding: 6px 0
+  }
+
+  &__condition{
+    display: flex;
+    padding: 6px 12px;
+
+    .#{$ns}-input{
+      padding: 0 6px;
+    }
+    .form-group--select-list .#{$ns}-popover-target .#{$ns}-button{
+      padding-left: 6px;
+    } 
+
+    .#{$ns}-html-select::after,
+    .form-group--select-list .#{$ns}-button::after{
+      margin-right: 6px;
+      // border-top-color: #c5c5c5;
+    }
+    .#{$ns}-html-select,
+    .#{$ns}-input,
+    .form-group--select-list .#{$ns}-button{
+      
+      &:not(:focus){
+        // border-color: #d3d9de;
+      }
+    }
+
+    .form-group--select-list .#{$ns}-button{
+      padding-right: 20px;
+    }
+    .#{$ns}-form-group{
+      margin-bottom: 0;
+      padding-right: 10px;
+
+      .#{$ns}-control.#{$ns}-checkbox{
+        margin-left: 20px;
+      }
+
+      .#{$ns}-popover-target{
+        width: 100%;
+      }
+
+      .#{$ns}-button{
+        text-overflow: ellipsis;
+        overflow: visible;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
+      }
+    }
+    .form-group--condition{
+      width: 65px;
+
+      input[disabled] {
+        background: transparent;
+        border: 0;
+      }
+    }
+    .form-group--comparator{
+      width: 120px;
+    }
+    .form-group--fieldKey{
+      width: 145px; 
+    }
+    .form-group--value{
+      width: 220px;
+    }
+
+    .button--remove{
+      margin-left: -6px;
+
+      .#{$ns}-icon{
+        color: #929aa0;
+      }
+    }
+  }
+
+  &__footer{
+    padding: 10px 12px;
+    margin-top: -6px;
+  }
+}
+
+.#{$ns}-popover{
+
+  &,
+  & .#{$ns}-popover-content{
+    border-radius: 5px;
+  }
+}
+
+.#{$ns}-menu-item{
+  .text-hint{
+    font-size: 11px;
+    line-height: 1.3;
+    display: block;
+    color: #5c7080;
+  }
+
+}

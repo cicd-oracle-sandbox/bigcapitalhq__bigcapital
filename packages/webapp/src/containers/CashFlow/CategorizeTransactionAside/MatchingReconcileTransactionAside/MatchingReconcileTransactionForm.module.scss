@@ -1,0 +1,56 @@
+@import '@/style/_common';
+
+
+
+.content{
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.footer {
+  padding: 11px 20px;
+  border-top: 1px solid var(--color-aside-divider);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+
+  :global .#{$ns}-form-group{
+    margin-bottom: 0;
+  }
+  :global .#{$ns}-input {
+    line-height: 30px;
+    height: 30px;
+  }
+}
+
+.asideContent{
+  background: #F6F7F9;
+  height: 335px;
+
+  :global(.#{$ns}-dark) & {
+    background: var(--color-dark-gray2);
+  }
+}
+
+.asideRoot {
+  flex: 1 1 0;
+  box-shadow: 0 0 0 1px rgba(17,20,24,.1),0 1px 1px rgba(17,20,24,.2),0 2px 6px rgba(17,20,24,.2);
+
+  :global(.#{$ns}-dark) & {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),0 1px 1px rgba(255, 255, 255, 0.2),0 2px 6px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.asideFooter {
+  background: #F6F7F9; 
+
+  :global(.#{$ns}-dark) & {
+    background: var(--color-dark-gray2);
+  }
+}

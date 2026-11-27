@@ -1,0 +1,39 @@
+@import '@/style/_common';
+.dashboard__insider--cashflow-accounts {
+  .bigcapital-datatable {
+    
+
+    .table {
+      .tbody {
+        .td.balance {
+          .cell-inner {
+            >span {
+              font-weight: 600;
+            }
+          }
+        }
+
+        .account_name {
+          .#{$ns}-popover-target--inactive-semafro {
+            margin-left: 8px;
+            margin-right: 6px;
+            float: right;
+            border: 0;
+          }
+
+          .#{$ns}-popover-target--account-desc {
+            border-bottom-color: #bbb;
+          }
+
+          .inactive-semafro {
+            height: 7px;
+            width: 7px;
+            background: #bbb;
+            display: inline-block;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}

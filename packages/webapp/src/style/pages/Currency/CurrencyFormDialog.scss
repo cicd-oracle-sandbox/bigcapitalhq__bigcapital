@@ -1,0 +1,24 @@
+@import '@/style/_common';
+.dialog--currency-form {
+  .#{$ns}-dialog-body {
+    margin-bottom: 30px;
+
+    .#{$ns}-form-group.#{$ns}-inline {
+      .#{$ns}-label {
+        min-width: 140px;
+      }
+      .#{$ns}-form-content {
+        width: 250px;
+      }
+    }
+    .#{$ns}-dialog-header {
+      height: 170px;
+    }
+  }
+
+  .#{$ns}-dialog-footer{
+    .#{$ns}-button{
+      min-width: 75px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '@/style/_common';
+.dashboard__insider--make-journal-page {
+  padding-bottom: 64px;
+}
+
+.page-form--make-journal-entries {
+  $self: '.page-form';
+
+  #{$self}__header {
+    display: flex;
+
+    &-fields {
+      flex: 1 0 0;
+    }
+
+    .#{$ns}-label {
+      min-width: 165px;
+    }
+    .#{$ns}-form-content {
+      width: 100%;
+    }
+
+    .#{$ns}-form-group {
+      margin-bottom: 18px;
+
+      &.#{$ns}-inline {
+        max-width: 480px;
+      }
+    }
+  }
+
+  .form-group--description {
+    max-width: 500px;
+
+    textarea {
+      min-height: 60px;
+      width: 100%;
+    }
+  }
+}

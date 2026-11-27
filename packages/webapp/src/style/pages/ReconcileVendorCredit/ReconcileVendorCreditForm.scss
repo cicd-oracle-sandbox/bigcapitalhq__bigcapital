@@ -1,0 +1,46 @@
+@import '@/style/_common';
+.dialog--reconcile-vendor-credit-form {
+  width: 850px;
+
+  .bigcapital-datatable {
+    .table {
+      border: 1px solid #d1dee2;
+      min-width: auto;
+
+      .tbody,
+      .tbody-inner {
+        height: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      .tbody {
+        .#{$ns}-form-group {
+          margin-bottom: 0;
+
+          &:not(.#{$ns}-intent-danger) .#{$ns}-input {
+            border: 1px solid #d0dfe2;
+
+            &:focus {
+              box-shadow: 0 0 0 1px #116cd0;
+              border-color: #116cd0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .#{$ns}-callout {
+    font-size: 14px;
+  }
+
+  .#{$ns}-dialog-footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+}

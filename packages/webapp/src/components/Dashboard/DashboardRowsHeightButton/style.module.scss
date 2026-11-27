@@ -1,0 +1,13 @@
+@import '@/style/_common';
+
+.menu{
+  :global .#{$ns}-heading{
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 12px;
+  }
+}
+
+.button{
+  min-width: 34px;
+}

@@ -1,0 +1,45 @@
+@import '@/style/_common';
+// Accountant.
+// ---------------------------------
+.preferences-page__inside-content--accountant {
+  .card {
+    padding: 25px;
+
+    .card__footer {
+      padding-top: 16px;
+      border-top: 1px solid #e0e7ea;
+      margin-top: 30px;
+
+      .#{$ns}-button {
+        min-width: 65px;
+
+        + .#{$ns}-button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .form-group--select-list {
+    button {
+      min-width: 250px;
+    }
+  }
+  .#{$ns}-form-group {
+    .#{$ns}-form-helper-text {
+      margin-top: 7px;
+    }
+
+    label.#{$ns}-label {
+      margin-bottom: 7px;
+    }
+  }
+  .#{$ns}-form-group.accounts-checkbox {
+    .#{$ns}-form-group.#{$ns}-inline {
+      margin-bottom: 7px;
+    }
+    .#{$ns}-control.#{$ns}-inline {
+      margin-bottom: 0;
+    }
+  }
+}

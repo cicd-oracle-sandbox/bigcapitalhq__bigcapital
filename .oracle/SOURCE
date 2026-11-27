@@ -1,0 +1,4 @@
+upstream: https://github.com/bigcapitalhq/bigcapital
+commit: 607f10a43d7ae9418c6ae50a4e38d262f161a9c4
+license: AGPL-3.0
+Unmodified snapshot except that .github/workflows was emptied.

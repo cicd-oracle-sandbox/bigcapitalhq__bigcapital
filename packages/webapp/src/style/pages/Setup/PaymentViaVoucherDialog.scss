@@ -1,0 +1,24 @@
+@import '@/style/_common';
+
+
+.dialog--payment-via-voucher{
+  
+  .#{$ns}-dialog-body{
+    p{
+      margin-bottom: 20px;
+    }
+    .form-group-license_code{
+      margin-bottom: 30px;
+    }
+  }
+
+  .#{$ns}-dialog-footer-actions{
+    button{
+      min-width: 80px;
+
+      &.#{$ns}-intent-primary{
+        min-width: 90px;
+      }
+    }
+  }
+}

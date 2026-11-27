@@ -1,0 +1,69 @@
+@import '@/style/_common';
+
+body.page-bill-new,
+body.page-bill-edit{
+
+  .dashboard__footer{
+    display: none;
+  }
+}
+
+.dashboard__insider--bill-form{
+  padding-bottom: 64px;
+}
+
+.page-form--bill{
+  $self: '.page-form';
+
+  #{$self}__header{
+    display: flex;
+
+    &-fields{
+      flex: 1 0 0;
+    }
+    .#{$ns}-form-group{
+      margin-bottom: 18px;
+    }
+    .#{$ns}-label{
+      min-width: 140px;
+    }
+    .#{$ns}-form-content{
+      width: 100%;
+    }
+
+    .#{$ns}-form-group{
+      &.#{$ns}-inline{
+        max-width: 440px; 
+      }
+
+      &.form-group{
+
+        &--expiration-date{
+          max-width: 340px;
+
+          .#{$ns}-label{
+            min-width: 120px;
+          }
+        }
+      }
+    }
+    .row--bill-date{
+
+      .col:first-of-type{
+        max-width: 435px;
+      }
+    }
+  }
+
+  #{$self}__footer{
+    .form-group--note{
+      max-width: 450px;
+      width: 100%;
+
+      textarea{
+        width: 100%;
+        min-height: 60px;
+      }
+    }
+  }
+}

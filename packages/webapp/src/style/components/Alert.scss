@@ -1,0 +1,8 @@
+@import '@/style/_common';
+.#{$ns}-alert{
+  .#{$ns}-alert-footer{
+    .#{$ns}-button{
+      min-width: 70px;
+    }
+  }
+}

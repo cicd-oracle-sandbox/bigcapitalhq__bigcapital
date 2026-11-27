@@ -1,0 +1,44 @@
+@import '@/style/_common';
+
+
+.number-format-dropdown{
+  width: 300px;
+  padding: 15px;
+
+  .#{$ns}-form-group{
+    margin-bottom: 6px;
+
+    label.#{$ns}-label{
+      font-size: 13px;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .#{$ns}-button{
+      min-height: 28px;
+      min-width: 28px;
+    }
+  }
+  .#{$ns}-control.#{$ns}-inline{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .toggles-fields{
+    margin-top: 14px;
+  }
+  &__footer{
+    text-align: right;  
+    padding-top: 10px;
+
+    .#{$ns}-button.#{$ns}-small,
+    .#{$ns}-button:not([class*="#{$ns}-intent-"]):not(.#{$ns}-minimal).#{$ns}-small{
+      min-width: 65px;
+      height: 26px;
+      min-height: 26px;
+    }
+  }
+
+  .#{$ns}-control .#{$ns}-control-indicator{
+    height: 16px;
+    width: 16px;
+  }
+}

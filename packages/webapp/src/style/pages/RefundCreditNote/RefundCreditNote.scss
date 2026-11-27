@@ -1,0 +1,24 @@
+@import '@/style/_common';
+.dialog--refund-credit-note {
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group {
+      margin-bottom: 13px;
+    }
+
+    .form-group {
+      &--description {
+        .#{$ns}-form-content {
+          textarea {
+            width: 100%;
+            min-width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

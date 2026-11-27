@@ -1,0 +1,20 @@
+@import '@/style/_common';
+.reference-number-form {
+
+    .#{$ns}-dialog-body {
+
+        .paragraph {
+            margin-bottom: 22px;
+        }
+
+        .#{$ns}-control {
+            margin-bottom: 16px;
+        }
+    }
+
+    .#{$ns}-dialog-footer {
+        .#{$ns}-button[type='submit'] {
+            min-width: 80px;
+        }
+    }
+}

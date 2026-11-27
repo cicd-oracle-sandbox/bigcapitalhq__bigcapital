@@ -1,0 +1,37 @@
+@import '@/style/_common';
+.dialog--warehouse-form {
+  width: 650px;
+
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group.#{$ns}-inline {
+      .#{$ns}-label {
+        font-size: 13px;
+        min-width: 140px;
+      }
+      .#{$ns}-form-content {
+        width: 388px;
+      }
+      .#{$ns}-control-group > * {
+        flex-shrink: unset;
+        padding-right: 5px;
+        padding-left: 5px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      &.form-group--warehouse_name,
+      &.form-group--phone_number {
+        .#{$ns}-form-content {
+          width: 278px;
+        }
+      }
+    }
+  }
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

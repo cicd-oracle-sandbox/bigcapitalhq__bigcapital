@@ -1,0 +1,25 @@
+@import '@/style/_common';
+
+.popover :global .#{$ns}-popover-content{
+  min-width: 600px;
+}
+
+.attachmentButton:not([class*=#{$ns}-intent-]) {
+  --x-background-color: #fff;
+  --x-border-color: rgb(206, 212, 218);
+
+  :global(.#{$ns}-dark) & {
+    --x-border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &,
+  &:hover{
+    background-color: #fff;
+  }
+  border: 1px solid var(--x-border-color);
+}
+
+.attachmentField :global .#{$ns}-label{
+  font-weight: 500;
+  font-size: 12px;
+}

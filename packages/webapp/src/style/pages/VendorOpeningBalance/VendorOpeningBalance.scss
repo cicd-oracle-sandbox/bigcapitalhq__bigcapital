@@ -1,0 +1,20 @@
+@import '@/style/_common';
+.dialog--vendor-opening-balance {
+  max-width: 400px;
+
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group {
+      margin-bottom: 15px;
+      margin-top: 15px;
+
+      label.#{$ns}-label {
+        margin-bottom: px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

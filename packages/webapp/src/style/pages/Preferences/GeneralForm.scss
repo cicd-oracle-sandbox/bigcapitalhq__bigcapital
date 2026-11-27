@@ -1,0 +1,21 @@
+@import '@/style/_common';
+
+
+//  General page
+//---------------------------------
+.preferences-page__inside-content--general {
+  .#{$ns}-form-group {
+    max-width: 650px;
+    margin-bottom: 24px;
+
+    .#{$ns}-label {
+      min-width: 190px;
+      font-weight: 600;
+      // color: #38414e;
+    }
+
+    .#{$ns}-form-content {
+      width: 100%;
+    }
+  }
+}

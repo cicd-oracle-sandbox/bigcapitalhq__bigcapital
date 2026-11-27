@@ -1,0 +1,14 @@
+@import '@/style/_common';
+.dialog--reconcile-credit-form {
+  width: 850px;
+
+  .#{$ns}-callout {
+    font-size: 14px;
+  }
+
+  .#{$ns}-dialog-footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,34 @@
+@import '@/style/_common';
+.dialog--user-form {
+  width: 450px;
+
+  .#{$ns}-form-group {
+    margin-bottom: 15px;
+  }
+  .#{$ns}-dialog-body {
+    margin-bottom: 30px;
+
+    .#{$ns}-form-group.#{$ns}-inline {
+      .#{$ns}-label {
+        min-width: 140px;
+      }
+      .#{$ns}-form-content {
+        width: 250px;
+      }
+    }
+    .#{$ns}-dialog-header {
+      height: 170px;
+    }
+  }
+
+  .#{$ns}-callout {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .#{$ns}-dialog-footer {
+    .#{$ns}-button {
+      min-width: 75px;
+    }
+  }
+}

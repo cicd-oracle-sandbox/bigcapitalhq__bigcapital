@@ -1,0 +1,50 @@
+@import '@/style/_common';
+.#{$ns}-button {
+  --color-button-color: #555;
+
+  .#{$ns}-dark & {
+    --color-button-color: var(--color-light-gray3);
+  }
+  min-width: 32px;
+  min-height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  &.#{$ns}-outlined {
+    .#{$ns}-dark & {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+.#{$ns}-button:not([class*='#{$ns}-intent-']) {
+  color: #33304a;
+}
+
+.#{$ns}-button:not([class*='#{$ns}-intent-']):not(.#{$ns}-minimal) {
+  color: var(--color-button-color);
+  box-shadow: 0 0 0 transparent;
+
+  &.#{$ns}-small {
+    font-size: 13px;
+  }
+}
+
+.#{$ns}-button-group.#{$ns}-minimal .#{$ns}-button {
+  background-color: transparent;
+}
+
+.#{$ns}-button {
+  &.#{$ns}-intent-primary,
+  &.#{$ns}-intent-success,
+  &.#{$ns}-intent-danger,
+  &.#{$ns}-intent-warning {
+    &,
+    &:hover {
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+}
+
+.button--secondary {
+}

@@ -1,0 +1,27 @@
+@import '@/style/_common';
+.dialog--quick-payment-receive {
+    .#{$ns}-form-group {
+      margin-bottom: 15px;
+
+      label.#{$ns}-label {
+        margin-bottom: 3px;
+        font-size: 13px;
+      }
+    }
+
+    .form-group {
+      &--statement {
+        .#{$ns}-form-content {
+          textarea {
+            width: 100%;
+            min-width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+}

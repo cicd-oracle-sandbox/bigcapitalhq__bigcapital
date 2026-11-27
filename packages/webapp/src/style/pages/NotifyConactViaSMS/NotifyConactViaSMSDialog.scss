@@ -1,0 +1,32 @@
+@import '@/style/_common';
+.dialog--notify-vis-sms {
+  width: 800px;
+
+  .#{$ns}-dialog-body {
+    .#{$ns}-form-group {
+      margin-bottom: 15px;
+      margin-top: 15px;
+
+      label.#{$ns}-label {
+        margin-bottom: 3px;
+        font-size: 13px;
+      }
+    }
+
+    .form-group {
+      &--sms_message {
+        .#{$ns}-form-content {
+          textarea {
+            width: 100%;
+            min-width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '@/style/_common';
+.dialog--contact-duplicate {
+  .#{$ns}-dialog-body {
+    > .paragraph {
+      margin-bottom: 1rem;
+    }
+    .#{$ns}-form-group {
+      margin-bottom: 1.4rem;
+
+      .#{$ns}-label {
+        font-size: 13px;
+      }
+    }
+    .#{$ns}-button:not([class*='#{$ns}-intent-']):not(.#{$ns}-minimal) {
+      width: 260px;
+    }
+  }
+
+  .#{$ns}-dialog-footer {
+    .#{$ns}-dialog-footer-actions .#{$ns}-button {
+      margin-left: 8px;
+      min-width: 65px;
+    }
+  }
+}
